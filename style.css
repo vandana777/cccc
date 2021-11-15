@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tourney:wght@100&family=Uchen&family=Yomogi&family=Zen+Loop:ital@1&family=Zen+Tokyo+Zoo&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+#topbar {
+  height: 80px;
+}
+p {
+  margin: 0;
+  font-size: 14px;
+}
+main {
+  display: flex;
+}
+img {
+  width: 100%;
+}
+.menuOption {
+  font-family: "Open Sans";
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  margin-left: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 2px solid gray;
+  padding: 5px;
+  box-shadow: 2px 2px 2px gray;
+}
+#mainMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#iplLogo {
+  width: 150px;
+}
+#searchingMenu {
+  width: 600px;
+  border: none;
+}
+#search-wrapper {
+  width: 110%;
+  max-width: 400px;
+  position: relative;
+}
+#search-wrapper > i {
+  position: absolute;
+  color: #999;
+  font-size: 18px;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+#search-box {
+  width: 100%;
+  border: 3px solid rgb(245, 242, 242);
+  box-sizing: border-box;
+  padding: 10px 24px 8px 48px;
+  color: black;
+  outline: none;
+  border-radius: 20px;
+}
+#navMenu {
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 16px 8%;
+  box-shadow: 0 2px 5px #ccc;
+  height: 82px;
+}
+
+#teamList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 530px;
+  margin-top: 82px;
+  padding: 10px;
+  height: fit-content;
+  justify-content: center;
+}
+.cardTeam {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 30px;
+  height: 250px;
+  width: 220px;
+  border-radius: 5px;
+  box-shadow: 5px 4px 20px rgb(168, 159, 159);
+  cursor: pointer;
+}
+.teamLogoDiv {
+  height: 70%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid rgb(235, 229, 229);
+  box-shadow: 1px 1px 1px white;
+  background-color: #8cdcf0;
+}
+
+.teamLogo {
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: contain;
+  width: 100%;
+}
+
+.teamDetails {
+  padding: 10px 10px;
+  text-align: center;
+  background-color: #e2f1e7;
+  height: 30%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 1px 1px 5px #e9e7d2;
+}
+
+.winCount {
+  font-family: "Uchen";
+  padding-top: 0px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.teamName {
+  font-family: "Uchen";
+  font-size: 16px;
+  font-weight: bolder;
+  color: #060630;
+}
+
+#teamDetail {
+  width: 100%;
+  min-height: 530px;
+  height: fit-content;
+  padding-top: 83px;
+}
+
+#playerDetails {
+  margin-top: 82px;
+  height: 550px;
+}
+
+#teamInfo {
+  display: flex;
+  align-items: center;
+  height: 10%;
+  margin: 20px 10%;
+  
+}
+
+#details {
+  width: 40%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #e9e7d2;
+  margin: 0px 20px;
+}
+
+#teamImage {
+  margin: 0px 120px;
+  height: 30%;
+  width: 20%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 5px solid #f3f3f7;
+  background-color: #d7e4e2;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #e9e7d2;
+}
+#teamImage img {
+  height: 210px;
+  width: fit-content;
+}
+
+#playersList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+#teamName {
+  font-family: "Uchen";
+  font-weight: bold;
+  font-size: 35px;
+  color:black;
+  /*box-shadow: 1px 2px 10px white;*/
+  padding: 0 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#topBatsman,
+#topBowler,
+#playerCount,
+#championshipWonCount {
+  font-family: "Uchen";
+  color: #03034d;
+  font-size: 20px;
+  /*box-shadow: 1px 2px 10px white;*/
+  padding: 0 5px;
+}
+
+.cardPlayer {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 30px;
+  height: 400px;
+  width: 250px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgb(235, 232, 232);
+  cursor: pointer;
+}
+
+.playerImageDiv {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid rgb(247, 244, 244);
+}
+
+.playerImage {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: contain;
+  width: 220px;
+}
+
+.playerDetail {
+  font-size: 12px;
+  font-family: "Uchen";
+  color: #03034d;
+  text-align: center;
+  padding: 10px 10px;
+  height: 50%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: whitesmoke;
+}
+
+.playerName {
+  font-family: "Uchen";
+  font-size: 13px;
+}
+
+.playerDetail p {
+  padding-top: 5px;
+}
+
+#selectedPlayerDetailsDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 220px;
+  text-align: center;
+  height: 550px;
+}
+
+#playerPic {
+  margin: 0 auto;
+  width: 30%;
+  border-radius: 50%;
+  
+}
+
+#playerPic img {
+  border-radius: 50%;
+  margin-top: 50px;
+  box-shadow: 1px 1px 1px 2px whitesmoke;
+}
+
+#selectedPlayerDetails {
+  margin:  0;
+  
+}
+
+.playerInfo{
+  width: 40%;
+  height: fit-content;
+  border: 1px solid rgb(235, 229, 229);
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px #e2e6e9;
+  text-align: center;
+  margin: 10px 220px;
+}
+.player{
+  color: blue;
+  font-size: 20px;
+  font-style: bold;
+  font-family: "Echen";
+}
+#playerName{
+  margin: 0;
+  font-size: 15px;
+  color: #0a0a4b;
+  font-family: "Echen";
+}
+#playerTeam{
+  margin: 0;
+  font-size: 15px;
+  color: #0a0a4b;
+  font-family: "Echen";
+}
+#playerPrice{
+  margin: 0;
+  font-size: 15px;
+  color: #0a0a4b;
+  font-family: "Echen";
+}
+#playerPlayingStatus{
+  margin: 0;
+  font-size: 15px;
+  color: #0a0a4b;
+  font-family: "Echen";
+}
+#playerRole{
+  margin: 0;
+  font-size: 15px;
+  color: #0a0a4b;
+  font-family: "Echen";
+}
+
+#footerDiv {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  height: 35px;
+}
